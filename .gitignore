@@ -3,3 +3,7 @@ vendor/
 .env
 
 composer.phar
+
+*.log
+
+dump.rdb
