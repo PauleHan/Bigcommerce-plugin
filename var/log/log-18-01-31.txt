@@ -1,0 +1,11 @@
+
+{"user":{"id":776888,"email":"p.peshkov@triggmine.com"},"owner":{"id":776888,"email":"p.peshkov@triggmine.com"},"context":"stores\/ayfv9ijlyc","store_hash":"ayfv9ijlyc","timestamp":1517382984.3971}
+{"user":{"id":776888,"email":"p.peshkov@triggmine.com"},"owner":{"id":776888,"email":"p.peshkov@triggmine.com"},"context":"stores\/ayfv9ijlyc","store_hash":"ayfv9ijlyc","timestamp":1517389198.4885}
+{"user":{"id":776888,"email":"p.peshkov@triggmine.com"},"owner":{"id":776888,"email":"p.peshkov@triggmine.com"},"context":"stores\/ayfv9ijlyc","store_hash":"ayfv9ijlyc","timestamp":1517389380.7801}
+{"user":{"id":776888,"email":"p.peshkov@triggmine.com"},"owner":{"id":776888,"email":"p.peshkov@triggmine.com"},"context":"stores\/ayfv9ijlyc","store_hash":"ayfv9ijlyc","timestamp":1517389404.536}
+{"user":{"id":776888,"email":"p.peshkov@triggmine.com"},"owner":{"id":776888,"email":"p.peshkov@triggmine.com"},"context":"stores\/ayfv9ijlyc","store_hash":"ayfv9ijlyc","timestamp":1517389460.4112}
+{"user":{"id":776888,"email":"p.peshkov@triggmine.com"},"owner":{"id":776888,"email":"p.peshkov@triggmine.com"},"context":"stores\/ayfv9ijlyc","store_hash":"ayfv9ijlyc","timestamp":1517402537.4895}
+[]
+{"user":{"id":776888,"email":"p.peshkov@triggmine.com"},"owner":{"id":776888,"email":"p.peshkov@triggmine.com"},"context":"stores\/ayfv9ijlyc","store_hash":"ayfv9ijlyc","timestamp":1517407071.1428}
+{"user":{"id":776888,"email":"p.peshkov@triggmine.com"},"owner":{"id":776888,"email":"p.peshkov@triggmine.com"},"context":"stores\/ayfv9ijlyc","store_hash":"ayfv9ijlyc","timestamp":1517407576.2268}
+{"user":{"id":556218,"email":"nab@hyperikon.com"},"owner":{"id":556218,"email":"nab@hyperikon.com"},"context":"stores\/uoeo150axe","store_hash":"uoeo150axe","timestamp":1517433411.2379}

@@ -1,0 +1,2 @@
+
+{"access_token":"q3heymx3kdurumgjhohascmawke1ttg","scope":"store_v2_customers_login store_v2_customers_read_only store_v2_default store_v2_information_read_only store_v2_orders_read_only store_v2_products_read_only store_v2_transactions_read_only users_basic_information","user":{"id":1107966,"username":"bucephaliabrothersllc@gmail.com","email":"bucephaliabrothersllc@gmail.com"},"context":"stores\/wlnr6xulew"}

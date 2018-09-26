@@ -1,0 +1,2 @@
+
+{"access_token":"s870ubtmxy1y5sxvqukvasnelg8gwhj","scope":"store_v2_customers_login store_v2_customers_read_only store_v2_default store_v2_information_read_only store_v2_orders_read_only store_v2_products_read_only store_v2_transactions_read_only users_basic_information","user":{"id":1014374,"username":"greer.iana@gmail.com","email":"greer.iana@gmail.com"},"context":"stores\/9ej335vqf3"}

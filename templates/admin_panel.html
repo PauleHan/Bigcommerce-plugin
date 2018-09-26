@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="js js no-mobile desktop no-ie chrome chrome59 admin-section gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch retina fontface input-color domloaded w-1276 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 lt-1280 lt-1440 lt-1680 lt-1920 no-portrait landscape" lang="en" id="index-page">
+
+    <head>
+        <meta charset=utf-8> <meta content="IE=edge" http-equiv=X-UA-Compatible>
+        <meta content="width=device-width,initial-scale=1" name=viewport>
+        <meta content="noindex, nofollow" name="robots">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>        
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="/templates/static/datepicker/js/bootstrap-datepicker.js"></script>
+        <script id="bigcommerce-sdk-js" async="" src="//cdn.bigcommerce.com/jssdk/bc-sdk.js"></script>
+        
+        
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/templates/static/datepicker/css/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" href="/templates/static/css/open_sans.css">
+        <link rel="stylesheet" href="/templates/static/css/source_sans_pro.css">
+        <link rel="stylesheet" href="/templates/static/css/control_panel.min.css">
+        <link rel="stylesheet" href="/templates/static/css/merge_styles.css">
+        <link rel="stylesheet" href="/templates/static/css/ng-common.min.css">
+        
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--<style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibilit y:hidden;}.ng-anchor{position:absolute;}
+        </style>-->
+        
+    </head>
+    
+    <body class="cp2">
+        <div id="wrap">
+            
+            <div class="ajax-load">
+                <p class="mrg-off"><i class="icon icon-loader-alt"></i> Loading… Please wait…</p>
+            </div>
+            
+            <header id="admin-header" role="banner" class="full-width">
+            </header>
+            
+            <div id="content" class="content fixed-width" role="main">
+            
+                <h1>TriggMine <sup>v3.0.21.3</sup></h1>
+                <p class="intro">Visit the <b><a href="//triggmine.freshdesk.com/solution/folders/22000168013" target="_blank" style="float: none;">BigCommerce getting started guide</a></b> for instructions on configuring TriggMine. Or contact <a href="mailto:support@triggmine.com" target="_blank" style="float: none;">support@triggmine.com</a></p>
+                
+                <!--<div class="alert alert-error">
+                	<i class="icon icon-error-sign"></i>
+                	<p>Invalid API URL</p>
+                </div>-->
+
+                <form class="form-horizontal" enctype="multipart/form-data" action="/load" id="adminPanel" method="get">
+                    
+                    <!--<input type="hidden" name="authenticity_token" value="3bd74fbc4dd87a6d4809f746e51ba1c0fc75cb8742aebd7f3b5be21d76bee3a2">-->
+                    
+                    <fieldset class="panel-block">
+                        
+                        <legend>
+                		    <span class="panel-heading">TriggMine Settings</span>
+                		</legend>
+                        
+                        <div class="panel-body">
+                            
+                            <div class="field field-align">
+                            	<p class="field-label">
+                            		Enable TriggMine
+                            	</p>
+                            	<div class="field-group">
+                            		<div class="field">
+                            			<div class="toggle-on-off">
+                            				<input type="checkbox" id="triggmine_settings_enable_plugin" name="triggmine_settings_enable_plugin" value="{{#if settings.ENABLE_PLUGIN}}1{{else}}0{{/if}}" {{#if settings.ENABLE_PLUGIN}}checked="checked"{{/if}}>
+                            				<label for="triggmine_settings_enable_plugin"></label>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>
+                            
+                            <div class="field">
+                                <label for="triggmine_settings_api_url">API URL</label>
+                                <div class="field-group">
+                                    <input type="text" id="triggmine_settings_api_url" name="triggmine_settings_api_url" class="form-control" placeholder="you-cabinet.triggmine.com" value="{{settings.API_URL}}">
+                                </div>
+                            </div>
+                            
+                            <div class="field">
+                                <label for="triggmine_settings_api_key">API KEY</label>
+                                <div class="field-group">
+                                    <input type="text" id="triggmine_settings_api_key" name="triggmine_settings_api_key" class="form-control" placeholder="some-random-key" value="{{settings.API_KEY}}">
+                                </div>
+                            </div>
+                            
+                            <p class="text-adjust-position">
+                                <span>
+                                Don't have an account? <a href="//client.triggmine.com/signup?utm_source={{settings.UTM_SOURCE}}&utm_medium=referral&utm_campaign=bigcommerce-plugin" target="_blank">Start your free trial</a>
+                                </span>
+                            </p>
+                            
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset class="panel-block">
+                        
+                        <legend>
+                            <span class="panel-heading">
+                                Export orders history
+                                <span class="field-label-note">(Optional)</span>
+                            </span>
+                        </legend>
+                        
+                        <div class="panel-body">
+                            
+                            <div class="field field-align">
+                            	<p class="field-label">
+                            		Enable Order Export
+                            	</p>
+                            	<div class="field-group">
+                            		<div class="field">
+                            			<div class="toggle-on-off">
+                            				<input type="checkbox" id="triggmine_settings_enable_order" name="triggmine_settings_enable_order" value="{{#if settings.ENABLE_ORDER}}1{{else}}0{{/if}}" {{#if settings.ENABLE_ORDER}}checked="checked"{{/if}}>
+                            				<label for="triggmine_settings_enable_order"></label>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>
+                            
+                            <div class="field">
+                                <label>Select date range</label>
+                                <div class="input-group input-daterange">
+                                    <input type="text" class="form-control" name="triggmine_settings_order_date_from" value="{{settings.ORDER_DATE_FROM}}">
+                                    <div class="input-group-addon">to</div>
+                                    <input type="text" class="form-control" name="triggmine_settings_order_date_to" value="{{settings.ORDER_DATE_TO}}">
+                                </div>
+                            </div>
+                		</div>
+                		
+                	</fieldset>
+                	
+                    <fieldset class="panel-block">
+                        
+                        <legend>
+                            <span class="panel-heading">
+                                Export customers data
+                                <span class="field-label-note">(Optional)</span>
+                            </span>
+                        </legend>
+                        
+                        <div class="panel-body">
+                            
+                            <div class="field field-align">
+                            	<p class="field-label">
+                            	    Enable Customer Export
+                            	</p>
+                            	<div class="field-group">
+                            		<div class="field">
+                            			<div class="toggle-on-off">
+                            				<input type="checkbox" id="triggmine_settings_enable_customers" name="triggmine_settings_enable_customers" value="{{#if settings.ENABLE_CUSTOMERS}}1{{else}}0{{/if}}" {{#if settings.ENABLE_CUSTOMERS}}checked="checked"{{/if}}>
+                            				<label for="triggmine_settings_enable_customers"></label>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>
+                            
+                            <div class="field">
+                                <label>Select date range</label>
+                                <div class="input-group input-daterange">
+                                    <input type="text" class="form-control" name="triggmine_settings_customers_date_from" value="{{settings.CUSTOMERS_DATE_FROM}}">
+                                    <div class="input-group-addon">to</div>
+                                    <input type="text" class="form-control" name="triggmine_settings_customers_date_to" value="{{settings.CUSTOMERS_DATE_TO}}">
+                                </div>
+                            </div>
+                            
+                		</div>
+                		
+                	</fieldset>
+                	
+                    <fieldset class="panel-block">
+                        
+                        <legend>
+                            <span class="panel-heading">
+                                Export products data
+                                <span class="field-label-note">(Optional)</span>
+                            </span>
+                        </legend>
+                        
+                        <div class="panel-body">
+                            
+                            <div class="field field-align">
+                            	<p class="field-label">
+                            	    Enable Products Export
+                            	</p>
+                            	<div class="field-group">
+                            		<div class="field">
+                            			<div class="toggle-on-off">
+                            				<input type="checkbox" id="triggmine_settings_enable_products" name="triggmine_settings_enable_products" value="{{#if settings.ENABLE_PRODUCTS}}1{{else}}0{{/if}}" {{#if settings.ENABLE_PRODUCTS}}checked="checked"{{/if}}>
+                            				<label for="triggmine_settings_enable_products"></label>
+                            			</div>
+                            		</div>
+                            	</div>
+                            </div>
+                            
+                		</div>
+                		
+                	</fieldset>
+                    
+                    
+                    <div class="field f-right">
+                    	<div class="field-group">
+                    		<ul class="field-action">
+                    			<li>
+                    				<a href="/load" data-display-text="Are you sure you want to cancel? Click OK to confirm.">Cancel</a>
+                    			</li>
+                    			<li>
+                    				<button type="submit" class="btn btn-primary" name="triggmine_settings_submit" value="save">Save</button>
+                    			</li>
+                    		</ul>
+                    	</div>
+                    
+                    </div>
+                </form>
+            </div>
+            
+            <footer class="full-width" role="contentinfo">
+                <div class="fixed-width">
+                    <p class="copyright">
+                    Made with <span class="hide-visually">love</span>
+                    			<span class="hearts">
+                    				<i class="icon icon-heart"></i>
+                    				<i class="icon icon-heart small" id="heart-one"></i>
+                    				<i class="icon icon-heart small" id="heart-two"></i>
+                    				<i class="icon icon-heart small" id="heart-three"></i>
+                    			</span>
+                    by the TriggMine team
+                    </p>
+                    <p class="copyright"></p>
+                </div>
+            </footer>
+            
+        </div>
+    </body>
+    
+    <script type="text/javascript">
+    
+        /*global $*/
+        $(function() {
+            
+            $('.toggle-on-off').parent().find("input:checkbox").change(function() {
+                
+                var a = $(this),
+                    b = a.attr("checked"),
+                    c = function () {
+                        return b ? 0 : 1;
+                    };
+                
+                a.attr("checked", !b);
+                a.val(c);
+            });
+            
+            $('.input-daterange').datepicker({
+                language: 'en',
+                format: 'dd.mm.yyyy'
+            });
+        });
+    </script>
+</html>

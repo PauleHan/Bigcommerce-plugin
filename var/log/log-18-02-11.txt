@@ -1,0 +1,2 @@
+
+{"access_token":"l2leg8aakufshfuj26huxjkkp17daw2","scope":"store_v2_customers_login store_v2_customers_read_only store_v2_default store_v2_information_read_only store_v2_orders_read_only store_v2_products_read_only store_v2_transactions_read_only users_basic_information","user":{"id":232424,"username":"juan@barcodeis.com","email":"juan@barcodeis.com"},"context":"stores\/olm95"}
