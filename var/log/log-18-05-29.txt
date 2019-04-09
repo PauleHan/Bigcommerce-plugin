@@ -1,2 +1,0 @@
-
-{"user":{"id":25943,"email":"theoneaustralia@gmail.com"},"owner":{"id":25943,"email":"theoneaustralia@gmail.com"},"context":"stores\/i2wavu","store_hash":"i2wavu","timestamp":1527562971.0284}

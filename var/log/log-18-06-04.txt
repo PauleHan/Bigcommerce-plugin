@@ -1,3 +1,0 @@
-
-{"access_token":"1q4vdce16fclpi68ccm4fqy3cntfz83","scope":"store_v2_customers_login store_v2_customers_read_only store_v2_default store_v2_information_read_only store_v2_orders_read_only store_v2_products_read_only store_v2_transactions_read_only users_basic_information","user":{"id":16703,"username":"dennis@novaswimwear.com.au","email":"dennis@novaswimwear.com.au"},"context":"stores\/s1v83"}
-{"user":{"id":16703,"email":"dennis@novaswimwear.com.au"},"owner":{"id":16703,"email":"dennis@novaswimwear.com.au"},"context":"stores\/s1v83","store_hash":"s1v83","timestamp":1528150047.3533}
